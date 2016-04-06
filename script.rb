@@ -11,12 +11,9 @@ def first_n_primes(n)
     return "n must be greater than 0."
   end
 
-  prime_array = []
-
   prime = Prime.each
-  for num in (1..n)
-    prime_array.push(prime.next)
-  end
-  return prime_array
-end
 
+  n.times.map do |i|
+    prime.next
+  end
+end
