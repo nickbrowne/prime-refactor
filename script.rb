@@ -11,12 +11,6 @@ def first_n_primes(n)
     return "n must be greater than 0."
   end
 
-  prime_array = [] if prime_array.nil?
-
-  prime = Prime.each
-  for num in (1..n)
-    prime_array.push(prime.next)
-  end
-  return prime_array
+  return Prime.first n
 end
 
