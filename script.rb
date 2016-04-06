@@ -10,10 +10,10 @@ def first_n_primes(n)
   if n <= 0
     return "n must be greater than 0."
   end
-  
+
   prime_array = [] if prime_array.nil?
-  
-  prime = Prime.new
+
+  prime = Prime.each
   for num in (1..n)
     prime_array.push(prime.next)
   end
